@@ -1,6 +1,6 @@
-FROM dockurr/macos
+FROM dockurr/macos:latest
 EXPOSE 8006
 ENV VERSION="12"
 ENV DISK_SIZE="25G"
 ENV ALLOCATE="X"
-ENTRYPOINT ["/run/entry.sh"]
+ENTRYPOINT ["sh", "-c", "python3 -m http.server 8006 & /run/entry.sh"]
