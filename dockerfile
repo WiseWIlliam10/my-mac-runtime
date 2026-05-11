@@ -1,0 +1,6 @@
+FROM dockurr/macos
+EXPOSE 8006
+ENV VERSION="12"
+ENV DISK_SIZE="25G"
+ENV ALLOCATE="X"
+ENTRYPOINT ["/run/entry.sh"]
