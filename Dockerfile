@@ -1,4 +1,4 @@
-FROM dockurr/macos:latest
+FROM dockurr/macos
 EXPOSE 8006
 ENV VERSION="12"
 ENV DISK_SIZE="14G"
